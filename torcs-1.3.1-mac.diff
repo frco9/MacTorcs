@@ -1,8 +1,9 @@
-Only in torcs-1.3.1-mac: .DS_Store
-Only in torcs-1.3.1-mac: MacTorcs
+Only in torcs-1.3.1-mac/: .DS_Store
+Only in torcs-1.3.1-mac/: MacTorcs
+Only in torcs-1.3.1-mac/data: .DS_Store
 diff -ru torcs-1.3.1/data/tracks/aalborg/Makefile torcs-1.3.1-mac/data/tracks/aalborg/Makefile
 --- torcs-1.3.1/data/tracks/aalborg/Makefile	2005-03-21 22:14:06.000000000 +0100
-+++ torcs-1.3.1-mac/data/tracks/aalborg/Makefile	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/aalborg/Makefile	2013-12-18 21:37:53.000000000 +0100
 @@ -25,7 +25,7 @@
  			tr-curb-bw-aa-r.rgb grass-aa.rgb tr-g-to-asphalt-aa-l_n.rgb tr-grass-aa-l_n.rgb \
  			tr-asphalt-2-aa-r_n.rgb tr-asphalt-aa-bw2-e_n.rgb tr-asphalt-aa-bw2_n.rgb \
@@ -12,9 +13,10 @@ diff -ru torcs-1.3.1/data/tracks/aalborg/Makefile torcs-1.3.1-mac/data/tracks/aa
  
  data-tracks-road_PKGFILES	= $(DATA)
  
+Only in torcs-1.3.1-mac/data/tracks/aalborg: Makefile.rej
 diff -ru torcs-1.3.1/data/tracks/road/alpine-2/Makefile torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile
 --- torcs-1.3.1/data/tracks/road/alpine-2/Makefile	2008-06-05 01:09:11.000000000 +0200
-+++ torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile	2013-12-18 21:37:53.000000000 +0100
 @@ -23,7 +23,7 @@
  			arbor2_n.rgb concrete2.rgb shadow2.rgb tr-stone-wall.rgb truck_arbor_berniw_n.rgb \
  			truck_arbor_dummy_n.rgb truck_arbor_hymie_n.rgb truck_arbor_inferno_n.rgb \
@@ -24,9 +26,10 @@ diff -ru torcs-1.3.1/data/tracks/road/alpine-2/Makefile torcs-1.3.1-mac/data/tra
  			armco_snow_arbor.png armcoturn_arbor.png background.png BARS_tree_n.png BLBDBK.png \
  			BLDG05_tree.png brick01.png cliff.png CMNTA.png concdark.png CONCRE.png \
  			concrete01.png concwall2.png concwall.png GRDRA_tree_n.png ice.png LOGOMELA.png \
+Only in torcs-1.3.1-mac/data/tracks/road/alpine-2: Makefile.rej
 diff -ru torcs-1.3.1/data/tracks/road/forza/Makefile torcs-1.3.1-mac/data/tracks/road/forza/Makefile
 --- torcs-1.3.1/data/tracks/road/forza/Makefile	2008-02-24 13:55:08.000000000 +0100
-+++ torcs-1.3.1-mac/data/tracks/road/forza/Makefile	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/forza/Makefile	2013-12-18 21:37:53.000000000 +0100
 @@ -23,7 +23,7 @@
  			100.png 300.png ABtree_n.png background.png BAtree_n.png BEtree_n.png \
  			BLBDBK.png BLDAB.png BLDA.png BLUPOLE.png BRtree_n.png BTOWB.png BUtree_n.png \
@@ -36,9 +39,10 @@ diff -ru torcs-1.3.1/data/tracks/road/forza/Makefile torcs-1.3.1-mac/data/tracks
  			FRRI.png FRtree_n.png G2tree_n.png GBtree_n.png GCtree_n.png GDtree_n.png GEtree_n.png \
  			GFtree_n.png GGtree.png GNtree_n.png GRAS2B.png GRtree_n.png GSBLUE.png GSBSTAIR.png \
  			GSDH.png GSPAtree.png GSRNDF.png GSSOLID.png GStree_n.png GSUNDER.png ITtree_n.png \
+Only in torcs-1.3.1-mac/data/tracks/road/forza: Makefile.rej
 diff -ru torcs-1.3.1/data/tracks/road/ruudskogen/Makefile torcs-1.3.1-mac/data/tracks/road/ruudskogen/Makefile
 --- torcs-1.3.1/data/tracks/road/ruudskogen/Makefile	2006-08-19 23:52:07.000000000 +0200
-+++ torcs-1.3.1-mac/data/tracks/road/ruudskogen/Makefile	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/ruudskogen/Makefile	2013-12-18 21:37:53.000000000 +0100
 @@ -20,7 +20,7 @@
  DATADIR   = tracks/road/$(TRACK)
  
@@ -48,9 +52,10 @@ diff -ru torcs-1.3.1/data/tracks/road/ruudskogen/Makefile torcs-1.3.1-mac/data/t
  			grass02.png hus02.png hytte01.png lave01.png lave02.png rk_tree_1_n.png \
  			rk_tree_2_n.png rk_tree_3_n.png road01-dashlines.png road01-pitentry.png \
  			road01-pits_n.png road01.png road02.png road03.png road-edge.png \
+Only in torcs-1.3.1-mac/data/tracks/road/ruudskogen: Makefile.rej
 diff -ru torcs-1.3.1/data/tracks/road/wheel-2/Makefile torcs-1.3.1-mac/data/tracks/road/wheel-2/Makefile
 --- torcs-1.3.1/data/tracks/road/wheel-2/Makefile	2008-02-24 15:24:44.000000000 +0100
-+++ torcs-1.3.1-mac/data/tracks/road/wheel-2/Makefile	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/wheel-2/Makefile	2013-12-18 21:37:53.000000000 +0100
 @@ -24,7 +24,7 @@
  			background.png building1.png building2.png clkdtm.png girder_tree_n.png grass.png \
  			rmbl.png sand.png sbridge2.png shadow2.png sign1.png sign2.png sign3.png swall2.png \
@@ -60,33 +65,124 @@ diff -ru torcs-1.3.1/data/tracks/road/wheel-2/Makefile torcs-1.3.1-mac/data/trac
  			barr1_n.rgb concdal.rgb shadow2.rgb texwheel.rgb torcs1.rgb truck0.rgb
  
  
+Only in torcs-1.3.1-mac/data/tracks/road/wheel-2: Makefile.rej
+Only in torcs-1.3.1-mac/doc: .DS_Store
+Only in torcs-1.3.1-mac/installer: .DS_Store
+Only in torcs-1.3.1-mac/src: .DS_Store
+Only in torcs-1.3.1-mac/src/drivers: .DS_Store
+Only in torcs-1.3.1-mac/src/drivers: enseirBOT
 diff -ru torcs-1.3.1/src/drivers/olethros/driver.cpp torcs-1.3.1-mac/src/drivers/olethros/driver.cpp
 --- torcs-1.3.1/src/drivers/olethros/driver.cpp	2008-05-31 00:18:32.000000000 +0200
-+++ torcs-1.3.1-mac/src/drivers/olethros/driver.cpp	2010-06-16 00:23:09.000000000 +0200
-@@ -41,6 +41,8 @@
++++ torcs-1.3.1-mac/src/drivers/olethros/driver.cpp	2013-12-18 22:44:37.000000000 +0100
+@@ -41,6 +41,31 @@
  #ifdef WIN32
  #include <float.h>
  #define isnan _isnan
 +#elif defined(__APPLE__)
-+#include "isnan.h"
++//#include "isnan.h"
++#include <math.h>
++#endif
++
++#ifdef isnan
++
++template <class _A1>
++_LIBCPP_ALWAYS_INLINE
++bool
++__libcpp_isnan(_A1 __x) _NOEXCEPT
++{
++    return isnan(__x);
++}
++
++#undef isnan
++
++template <class _A1>
++inline _LIBCPP_INLINE_VISIBILITY
++typename std::enable_if<std::is_floating_point<_A1>::value, bool>::type
++isnan(_A1 __x) _NOEXCEPT
++{
++    return __libcpp_isnan(__x);
++}
++
  #endif
  
  #undef TEST_PITSTOPS
+@@ -297,7 +322,7 @@
+             tTrackSeg *s = track->seg;
+             for (int i=0; i<track->nseg; i++, s=s->next) {
+                 float u = getAllowedSpeed(s);
+-                if (isnan(u) || u>10000.0) {
++                if (std::isnan(u) || u>10000.0) {
+                     u = 10000.0;
+                 }
+                 max_speed_list[s->id] = u;
+@@ -465,7 +490,7 @@
+             //printf ("R: :%1.f %1.f %1.f\n", ideal_radius[currentseg->id], EstimateRadius2(currentseg), currentseg->radius);
+             if (currentseg->type == TR_STR) {
+                 lastsegtype = TR_STR;
+-                if (isnan(ideal_radius[currentseg->id]) || 
++                if (std::isnan(ideal_radius[currentseg->id]) || 
+                     ideal_radius[currentseg->id]>10000) {
+                     ideal_radius[currentseg->id] = 10000;
+                 }
+@@ -488,7 +513,7 @@
+                 }
+                 radius[currentseg->id] = (currentseg->radius + currentseg->width/2.0)/lastturnarc;
+ 
+-                if (isnan(ideal_radius[currentseg->id]) || 
++                if (std::isnan(ideal_radius[currentseg->id]) || 
+                     ideal_radius[currentseg->id]>10000.0f) {
+                     ideal_radius[currentseg->id] = 10000.0f;
+                 }
+Only in torcs-1.3.1-mac/src/drivers/olethros: driver.cpp.rej
 diff -ru torcs-1.3.1/src/drivers/olethros/geometry.cpp torcs-1.3.1-mac/src/drivers/olethros/geometry.cpp
 --- torcs-1.3.1/src/drivers/olethros/geometry.cpp	2006-01-06 16:22:29.000000000 +0100
-+++ torcs-1.3.1-mac/src/drivers/olethros/geometry.cpp	2010-06-16 00:23:09.000000000 +0200
-@@ -27,6 +27,8 @@
++++ torcs-1.3.1-mac/src/drivers/olethros/geometry.cpp	2013-12-18 22:43:03.000000000 +0100
+@@ -27,6 +27,31 @@
  #ifdef WIN32
  #include <float.h>
  #define isnan _isnan
 +#elif defined(__APPLE__)
-+#include "isnan.h"
++//#include "isnan.h"
++#include <math.h>
++#endif
++
++#ifdef isnan
++
++template <class _A1>
++_LIBCPP_ALWAYS_INLINE
++bool
++__libcpp_isnan(_A1 __x) _NOEXCEPT
++{
++    return isnan(__x);
++}
++
++#undef isnan
++
++template <class _A1>
++inline _LIBCPP_INLINE_VISIBILITY
++typename std::enable_if<std::is_floating_point<_A1>::value, bool>::type
++isnan(_A1 __x) _NOEXCEPT
++{
++    return __libcpp_isnan(__x);
++}
++
  #endif
  
  
+@@ -370,7 +395,7 @@
+ 				}
+ 				delta_total += delta;
+ 			}
+-			if (isnan(r)) {
++			if (std::isnan(r)) {
+ 				for (i=0; i<d; i++) {
+ 					center[i] =  ((*(sphere->C))[i] - mean[i]) / scale;
+ 				}
+Only in torcs-1.3.1-mac/src/drivers/olethros: geometry.cpp.rej
+Only in torcs-1.3.1-mac/src/libs: .DS_Store
 diff -ru torcs-1.3.1/src/libs/client/splash.cpp torcs-1.3.1-mac/src/libs/client/splash.cpp
 --- torcs-1.3.1/src/libs/client/splash.cpp	2008-08-16 16:58:51.000000000 +0200
-+++ torcs-1.3.1-mac/src/libs/client/splash.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/client/splash.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -20,7 +20,11 @@
  #include <windows.h>
  #define HAVE_CONFIG_H
@@ -100,23 +196,76 @@ diff -ru torcs-1.3.1/src/libs/client/splash.cpp torcs-1.3.1-mac/src/libs/client/
  #include <stdlib.h>
  #include <stdio.h>
  
+Only in torcs-1.3.1-mac/src/libs/client: splash.cpp.rej
 diff -ru torcs-1.3.1/src/libs/learning/policy.cpp torcs-1.3.1-mac/src/libs/learning/policy.cpp
 --- torcs-1.3.1/src/libs/learning/policy.cpp	2005-09-19 14:48:03.000000000 +0200
-+++ torcs-1.3.1-mac/src/libs/learning/policy.cpp	2010-06-16 00:23:09.000000000 +0200
-@@ -18,7 +18,9 @@
++++ torcs-1.3.1-mac/src/libs/learning/policy.cpp	2013-12-18 22:41:41.000000000 +0100
+@@ -17,8 +17,33 @@
+ #include <learning/MathFunctions.h>
  #ifdef WIN32
  #include <float.h>
++#include <math.h>
  #define isnan _isnan
 -#endif // WIN32
 +#elif defined(__APPLE__)
-+#include "isnan.h"
++//#include "isnan.h"
++#endif
++
++#ifdef isnan
++
++template <class _A1>
++_LIBCPP_ALWAYS_INLINE
++bool
++__libcpp_isnan(_A1 __x) _NOEXCEPT
++{
++    return isnan(__x);
++}
++
++#undef isnan
++
++template <class _A1>
++inline _LIBCPP_INLINE_VISIBILITY
++typename std::enable_if<std::is_floating_point<_A1>::value, bool>::type
++isnan(_A1 __x) _NOEXCEPT
++{
++    return __libcpp_isnan(__x);
++}
++
 +#endif
  
  #undef POLICY_LOG
  
+@@ -435,7 +460,7 @@
+ 					// if P[][] remains unchanged between updates.
+ 					// -- removed because it doesn't work! --
+ 					//P[i][j] += 0.01*delta * e[i][j] * (1.-P[i][j]);
+-					if ((fabs (Q[i][j])>1000.0)||(isnan(Q[i][j]))) {
++					if ((fabs (Q[i][j])>1000.0)||(std::isnan(Q[i][j]))) {
+ 						printf ("u: %d %d %f %f\n", i,j,Q[i][j], ad * e[i][j]);
+ 					}
+ 					
+@@ -512,7 +537,7 @@
+ 	for (i=0; i<n_states; i++) {
+ 		fread((void *) Q[i], sizeof(real), n_actions, fh);
+ 		for (j=0; j<n_actions; j++) {
+-			if ((fabs (Q[i][j])>100.0)||(isnan(Q[i][j]))) {
++			if ((fabs (Q[i][j])>100.0)||(std::isnan(Q[i][j]))) {
+ 				printf ("l: %d %d %f\n", i,j,Q[i][j]);
+ 				Q[i][j] = 0.0;
+ 			}
+@@ -564,7 +589,7 @@
+ 	for (int i=0; i<n_states; i++) {
+ 		fwrite((void *) Q[i], sizeof(real), n_actions, fh);
+ 		for (int j=0; j<n_actions; j++) {
+-			if ((fabs (Q[i][j])>100.0)||(isnan(Q[i][j]))) {
++			if ((fabs (Q[i][j])>100.0)||(std::isnan(Q[i][j]))) {
+ 				printf ("s: %d %d %f\n", i,j,Q[i][j]);
+ 			}
+ 		}
+Only in torcs-1.3.1-mac/src/libs/learning: policy.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/fg_gm.cpp torcs-1.3.1-mac/src/libs/tgfclient/fg_gm.cpp
 --- torcs-1.3.1/src/libs/tgfclient/fg_gm.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/fg_gm.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/fg_gm.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -42,8 +42,13 @@
  	2004/10/03 Bernhard Wymann: Added Randr support, bugfixes.
  */
@@ -167,9 +316,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/fg_gm.cpp torcs-1.3.1-mac/src/libs/tgfcl
      /*
       * Then, have the desktop visual settings restored
       */
+Only in torcs-1.3.1-mac/src/libs/tgfclient: fg_gm.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/glfeatures.h torcs-1.3.1-mac/src/libs/tgfclient/glfeatures.h
 --- torcs-1.3.1/src/libs/tgfclient/glfeatures.h	2005-08-05 11:26:39.000000000 +0200
-+++ torcs-1.3.1-mac/src/libs/tgfclient/glfeatures.h	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/glfeatures.h	2013-12-18 21:37:53.000000000 +0100
 @@ -28,14 +28,16 @@
  #ifndef _GRFEATURES_H_
  #define _GRFEATURES_H_
@@ -195,9 +345,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/glfeatures.h torcs-1.3.1-mac/src/libs/tg
  #include <tgfclient.h>
  #include <graphic.h>
  
+Only in torcs-1.3.1-mac/src/libs/tgfclient: glfeatures.h.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/gui.cpp torcs-1.3.1-mac/src/libs/tgfclient/gui.cpp
 --- torcs-1.3.1/src/libs/tgfclient/gui.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/gui.cpp	2010-06-16 02:51:58.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/gui.cpp	2013-12-18 21:39:35.000000000 +0100
 @@ -249,6 +249,11 @@
  	int		modifier;
  	tGfuiObject	*obj;
@@ -210,7 +361,19 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/gui.cpp torcs-1.3.1-mac/src/libs/tgfclie
  	modifier = glutGetModifiers();
  	
  	/* user preempt key */
-@@ -322,6 +327,11 @@
+@@ -286,6 +291,11 @@
+ 	int		modifier;
+ 	tGfuiObject	*obj;
+ 	
++#ifdef __APPLE__
++	/* work around GLUT bug on OS X which swaps the delete and backspace keys */
++	if (key == 8) key = 127;
++	else if (key == 127) key = 8;
++#endif
+ 	modifier = glutGetModifiers();
+ 	
+ 	/* user preempt key */
+@@ -322,6 +332,11 @@
  	tGfuiKey	*curKey;
  	int		modifier;
  	
@@ -222,9 +385,23 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/gui.cpp torcs-1.3.1-mac/src/libs/tgfclie
  	modifier = glutGetModifiers();
  	
  	/* user preempt key */
+@@ -350,6 +365,11 @@
+ 	tGfuiKey	*curKey;
+ 	int		modifier;
+ 	
++#ifdef __APPLE__
++	/* work around GLUT bug on OS X which swaps the delete and backspace keys */
++	if (key == 8) key = 127;
++	else if (key == 127) key = 8;
++#endif
+ 	modifier = glutGetModifiers();
+ 	
+ 	/* user preempt key */
+Only in torcs-1.3.1-mac/src/libs/tgfclient: gui.cpp.orig
+Only in torcs-1.3.1-mac/src/libs/tgfclient: gui.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/guifont.cpp torcs-1.3.1-mac/src/libs/tgfclient/guifont.cpp
 --- torcs-1.3.1/src/libs/tgfclient/guifont.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/guifont.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/guifont.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -24,7 +24,7 @@
  
  #ifdef WIN32
@@ -234,9 +411,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/guifont.cpp torcs-1.3.1-mac/src/libs/tgf
  #include <machine/endian.h>
  #else
  #include <endian.h>
+Only in torcs-1.3.1-mac/src/libs/tgfclient: guifont.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/guimenu.cpp torcs-1.3.1-mac/src/libs/tgfclient/guimenu.cpp
 --- torcs-1.3.1/src/libs/tgfclient/guimenu.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/guimenu.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/guimenu.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -29,7 +29,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -250,9 +428,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/guimenu.cpp torcs-1.3.1-mac/src/libs/tgf
  
  #include <tgfclient.h>
  #include "gui.h"
+Only in torcs-1.3.1-mac/src/libs/tgfclient: guimenu.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/img.cpp torcs-1.3.1-mac/src/libs/tgfclient/img.cpp
 --- torcs-1.3.1/src/libs/tgfclient/img.cpp	2006-10-29 16:55:33.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/img.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/img.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -28,7 +28,11 @@
  #include <windows.h>
  #endif
@@ -265,9 +444,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/img.cpp torcs-1.3.1-mac/src/libs/tgfclie
  
  #include <tgfclient.h>
  #include <stdlib.h>
+Only in torcs-1.3.1-mac/src/libs/tgfclient: img.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/screen.cpp torcs-1.3.1-mac/src/libs/tgfclient/screen.cpp
 --- torcs-1.3.1/src/libs/tgfclient/screen.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/libs/tgfclient/screen.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/screen.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -27,7 +27,12 @@
  #ifdef WIN32
  #include <windows.h>
@@ -347,9 +527,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/screen.cpp torcs-1.3.1-mac/src/libs/tgfc
      if (retcode) {
  	perror("torcs");
  	exit(1);
+Only in torcs-1.3.1-mac/src/libs/tgfclient: screen.cpp.rej
 diff -ru torcs-1.3.1/src/libs/tgfclient/tgfclient.h torcs-1.3.1-mac/src/libs/tgfclient/tgfclient.h
 --- torcs-1.3.1/src/libs/tgfclient/tgfclient.h	2008-08-16 16:12:08.000000000 +0200
-+++ torcs-1.3.1-mac/src/libs/tgfclient/tgfclient.h	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/tgfclient.h	2013-12-18 21:37:53.000000000 +0100
 @@ -28,7 +28,11 @@
  #define __TGFCLIENT__H__
  
@@ -363,9 +544,10 @@ diff -ru torcs-1.3.1/src/libs/tgfclient/tgfclient.h torcs-1.3.1-mac/src/libs/tgf
  #include <js.h>
  #include <screen_properties.h>
  
+Only in torcs-1.3.1-mac/src/libs/tgfclient: tgfclient.h.rej
 diff -ru torcs-1.3.1/src/linux/main.cpp torcs-1.3.1-mac/src/linux/main.cpp
 --- torcs-1.3.1/src/linux/main.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/linux/main.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/linux/main.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -19,7 +19,11 @@
  
  #include <stdlib.h>
@@ -379,9 +561,11 @@ diff -ru torcs-1.3.1/src/linux/main.cpp torcs-1.3.1-mac/src/linux/main.cpp
  
  #include <tgfclient.h>
  #include <client.h>
+Only in torcs-1.3.1-mac/src/linux: main.cpp.rej
+Only in torcs-1.3.1-mac/src/modules: .DS_Store
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp	2006-01-05 10:53:37.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -164,7 +164,7 @@
  void OpenalSoundInterface::setNCars(int n_cars)
  {
@@ -391,9 +575,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp torcs
  }
  
  
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: OpenalSoundInterface.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/PlibSoundInterface.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/PlibSoundInterface.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/PlibSoundInterface.cpp	2005-11-18 01:20:32.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/PlibSoundInterface.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/PlibSoundInterface.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -60,7 +60,7 @@
  void PlibSoundInterface::setNCars(int n_cars)
  {
@@ -403,9 +588,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/PlibSoundInterface.cpp torcs-1
  }
  
  slScheduler* PlibSoundInterface::getScheduler()
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: PlibSoundInterface.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/SoundInterface.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/SoundInterface.h
 --- torcs-1.3.1/src/modules/graphic/ssggraph/SoundInterface.h	2005-11-18 01:20:32.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/SoundInterface.h	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/SoundInterface.h	2013-12-18 21:37:53.000000000 +0100
 @@ -241,8 +241,8 @@
  	slScheduler* sched;
  	std::vector<TorcsSound*> sound_list;
@@ -428,9 +614,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/SoundInterface.h torcs-1.3.1-m
  	ALCcontext* cc;
  	ALCdevice* dev;
  	float global_gain;
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: SoundInterface.h.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.cpp	2005-11-18 01:20:32.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -186,7 +186,7 @@
  }
  
@@ -479,9 +666,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.cpp torcs-1.3.1-mac
  	error = alGetError();
  	if (error != AL_NO_ERROR) {
  		printf("OpenAL Error: %d, could not load %s\n", error, filename);
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: TorcsSound.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.h
 --- torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.h	2005-11-18 01:20:32.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.h	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.h	2013-12-18 21:37:53.000000000 +0100
 @@ -26,9 +26,15 @@
  
  #include <plib/sg.h>
@@ -534,9 +722,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.h torcs-1.3.1-mac/s
  	//virtual void setListener (sgVec3 p, sgVec3 u);
  	virtual void play();
  	virtual void start();
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: TorcsSound.h.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcam.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcam.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grcam.cpp	2007-11-06 21:43:31.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcam.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcam.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -21,11 +21,16 @@
  #include <stdlib.h>
  #include <math.h>
@@ -554,9 +743,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcam.cpp torcs-1.3.1-mac/src/
  #include <plib/ssg.h>
  
  #include <robottools.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grcam.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcar.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcar.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grcar.cpp	2008-08-24 21:26:46.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcar.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcar.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -26,7 +26,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -570,9 +760,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcar.cpp torcs-1.3.1-mac/src/
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grcar.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcarlight.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcarlight.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grcarlight.cpp	2008-08-29 01:24:54.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcarlight.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcarlight.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -25,7 +25,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -586,9 +777,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcarlight.cpp torcs-1.3.1-mac
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grcarlight.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grmain.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grmain.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grmain.cpp	2005-08-05 11:48:29.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grmain.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grmain.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -23,7 +23,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -602,9 +794,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grmain.cpp torcs-1.3.1-mac/src
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grmain.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grscene.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grscene.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grscene.cpp	2006-02-20 21:16:09.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grscene.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grscene.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -28,7 +28,11 @@
  #include <GL/gl.h>
  #include <GL/glext.h>
@@ -618,9 +811,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grscene.cpp torcs-1.3.1-mac/sr
  #include <plib/ssg.h>
  #include <plib/ssgAux.h>
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grscene.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grskidmarks.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grskidmarks.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grskidmarks.cpp	2005-12-25 02:22:06.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grskidmarks.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grskidmarks.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -26,7 +26,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -634,9 +828,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grskidmarks.cpp torcs-1.3.1-ma
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grskidmarks.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grsmoke.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grsmoke.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grsmoke.cpp	2005-07-21 23:27:15.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grsmoke.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grsmoke.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -24,7 +24,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -650,9 +845,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grsmoke.cpp torcs-1.3.1-mac/sr
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grsmoke.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grtrackmap.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/grtrackmap.h
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grtrackmap.h	2005-08-05 11:48:30.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grtrackmap.h	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grtrackmap.h	2013-12-18 21:37:53.000000000 +0100
 @@ -29,9 +29,15 @@
  
  #include <car.h>
@@ -672,9 +868,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grtrackmap.h torcs-1.3.1-mac/s
  
  #ifndef WIN32
  #include <unistd.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grtrackmap.h.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grutil.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grutil.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grutil.cpp	2008-11-09 18:50:22.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grutil.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grutil.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -25,7 +25,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -688,9 +885,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grutil.cpp torcs-1.3.1-mac/src
  #include <plib/ssg.h>
  
  #include <tgfclient.h>
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grutil.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grvtxtable.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grvtxtable.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/grvtxtable.cpp	2005-09-19 21:00:57.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grvtxtable.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grvtxtable.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -31,7 +31,11 @@
  #include "grscene.h"
  #include "grcar.h"
@@ -703,9 +901,10 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grvtxtable.cpp torcs-1.3.1-mac
  
  /* from grloadac.cpp (beuark!) */
  extern double shad_xmax;
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: grvtxtable.cpp.rej
 diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/ssggraph.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/ssggraph.cpp
 --- torcs-1.3.1/src/modules/graphic/ssggraph/ssggraph.cpp	2005-02-01 20:08:19.000000000 +0100
-+++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/ssggraph.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/ssggraph.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -20,7 +20,11 @@
  #ifdef WIN32
  #include <windows.h>
@@ -719,9 +918,14 @@ diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/ssggraph.cpp torcs-1.3.1-mac/s
  
  #include <tgfclient.h>
  
+Only in torcs-1.3.1-mac/src/modules/graphic/ssggraph: ssggraph.cpp.rej
+Only in torcs-1.3.1-mac/src/modules/simu: .DS_Store
+Only in torcs-1.3.1-mac/src/modules/simu/simuv2: .DS_Store
+Only in torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0: .DS_Store
+Only in torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/include: .DS_Store
 diff -ru torcs-1.3.1/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp
 --- torcs-1.3.1/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp	2006-04-28 01:33:35.000000000 +0200
-+++ torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -23,10 +23,10 @@
  		  Eindhoven University of Technology
  		  P.O. Box 513, 5600 MB Eindhoven, The Netherlands
@@ -746,9 +950,10 @@ diff -ru torcs-1.3.1/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp torcs-1.3.1
  #  include <sys/types.h>
  #endif
  
+Only in torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src: C-api.cpp.rej
 diff -ru torcs-1.3.1/src/tools/texmapper/maintexmapper.cpp torcs-1.3.1-mac/src/tools/texmapper/maintexmapper.cpp
 --- torcs-1.3.1/src/tools/texmapper/maintexmapper.cpp	2008-11-09 18:50:23.000000000 +0100
-+++ torcs-1.3.1-mac/src/tools/texmapper/maintexmapper.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/tools/texmapper/maintexmapper.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -28,7 +28,11 @@
  #include <getopt.h>
  #include <math.h>
@@ -762,9 +967,10 @@ diff -ru torcs-1.3.1/src/tools/texmapper/maintexmapper.cpp torcs-1.3.1-mac/src/t
  
  #include <tgfclient.h>
  
+Only in torcs-1.3.1-mac/src/tools/texmapper: maintexmapper.cpp.rej
 diff -ru torcs-1.3.1/src/tools/trackgen/maintrackgen.cpp torcs-1.3.1-mac/src/tools/trackgen/maintrackgen.cpp
 --- torcs-1.3.1/src/tools/trackgen/maintrackgen.cpp	2008-11-09 18:50:23.000000000 +0100
-+++ torcs-1.3.1-mac/src/tools/trackgen/maintrackgen.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/tools/trackgen/maintrackgen.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -37,7 +37,11 @@
  #include <math.h>
  #include <plib/ul.h>
@@ -778,9 +984,10 @@ diff -ru torcs-1.3.1/src/tools/trackgen/maintrackgen.cpp torcs-1.3.1-mac/src/too
  
  #include <tgfclient.h>
  #include <track.h>
+Only in torcs-1.3.1-mac/src/tools/trackgen: maintrackgen.cpp.rej
 diff -ru torcs-1.3.1/src/tools/trackgen/objects.cpp torcs-1.3.1-mac/src/tools/trackgen/objects.cpp
 --- torcs-1.3.1/src/tools/trackgen/objects.cpp	2008-11-09 18:50:23.000000000 +0100
-+++ torcs-1.3.1-mac/src/tools/trackgen/objects.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/tools/trackgen/objects.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -32,7 +32,11 @@
  #endif
  #include <math.h>
@@ -794,9 +1001,10 @@ diff -ru torcs-1.3.1/src/tools/trackgen/objects.cpp torcs-1.3.1-mac/src/tools/tr
  
  #include <tgfclient.h>
  #include <track.h>
+Only in torcs-1.3.1-mac/src/tools/trackgen: objects.cpp.rej
 diff -ru torcs-1.3.1/src/tools/trackgen/relief.cpp torcs-1.3.1-mac/src/tools/trackgen/relief.cpp
 --- torcs-1.3.1/src/tools/trackgen/relief.cpp	2008-11-09 18:50:23.000000000 +0100
-+++ torcs-1.3.1-mac/src/tools/trackgen/relief.cpp	2010-06-16 00:23:09.000000000 +0200
++++ torcs-1.3.1-mac/src/tools/trackgen/relief.cpp	2013-12-18 21:37:53.000000000 +0100
 @@ -33,7 +33,11 @@
  #endif
  #include <math.h>
@@ -810,3 +1018,4 @@ diff -ru torcs-1.3.1/src/tools/trackgen/relief.cpp torcs-1.3.1-mac/src/tools/tra
  
  #include <tgfclient.h>
  #include <track.h>
+Only in torcs-1.3.1-mac/src/tools/trackgen: relief.cpp.rej

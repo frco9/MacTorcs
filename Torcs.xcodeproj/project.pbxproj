@@ -30,6 +30,7 @@
 				1362F7A411AEE71300AF3D9A /* PBXTargetDependency */,
 				1362F7A211AEE71300AF3D9A /* PBXTargetDependency */,
 				1362F7A011AEE71300AF3D9A /* PBXTargetDependency */,
+				1E2ABAAB186738C0004939E0 /* PBXTargetDependency */,
 			);
 			name = "All Dynamic Libraries";
 			productName = "Dynamic Libraries";
@@ -491,7 +492,27 @@
 		13FFB03311B0952900DFC073 /* v3_t.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FFB02411B0952900DFC073 /* v3_t.h */; };
 		13FFB03411B0952900DFC073 /* v4_t.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FFB02511B0952900DFC073 /* v4_t.h */; };
 		13FFB05A11B096C300DFC073 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7CE6BA0EB7FE400081FD35 /* CoreFoundation.framework */; };
+		1E880BCC186734C300C05F95 /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1D7A4186714BF004332C6 /* driver.cpp */; settings = {COMPILER_FLAGS = "-fPIC"; }; };
+		1EB1D7A5186715C4004332C6 /* drive.ll in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1D7A3186714BF004332C6 /* drive.ll */; settings = {COMPILER_FLAGS = "-fPIC"; }; };
+		1EFBDDA5186710B10078F625 /* libTorcs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE722AA0DAC7AD3008D6F50 /* libTorcs.dylib */; };
+		1EFBDDA6186710B10078F625 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEABC8D0DADBCE800FE87DD /* libpng.framework */; };
+		1EFBDDA7186710B10078F625 /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEABC910DADBCF400FE87DD /* zlib.framework */; };
+		1EFBDDA8186710B10078F625 /* plib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEAD1760DADC0C100FE87DD /* plib.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1EB1D7A6186715CF004332C6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.llvm.clang.1_0;
+			filePatterns = "*.ll";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).o",
+			);
+			script = "/usr/local/Cellar/llvm/3.3/bin/llc -relocation-model=pic -o $DERIVED_FILE_DIR/$INPUT_FILE_BASE.o $INPUT_FILE_PATH";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		0FE71DD00DAC58FF008D6F50 /* PBXContainerItemProxy */ = {
@@ -738,6 +759,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0FE71DCF0DAC58EF008D6F50;
 			remoteInfo = "All Dynamic Libraries";
+		};
+		1E2ABAAA186738C0004939E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFBDD9A186710B10078F625;
+			remoteInfo = enseirBOT.so;
+		};
+		1EFBDD9C186710B10078F625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE722A90DAC7AD3008D6F50;
+			remoteInfo = "Torcs Shared Symbols";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1823,6 +1858,9 @@
 		13FFB02511B0952900DFC073 /* v4_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v4_t.h; sourceTree = "<group>"; };
 		13FFB04F11B0964200DFC073 /* mac_setup_resources.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mac_setup_resources.mk; sourceTree = "<group>"; };
 		13FFB05011B0964200DFC073 /* torcs-1.3.1-mac.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "torcs-1.3.1-mac.diff"; sourceTree = "<group>"; };
+		1EB1D7A3186714BF004332C6 /* drive.ll */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.llvm; name = drive.ll; path = ../src/drivers/enseirBOT/drive.ll; sourceTree = SOURCE_ROOT; };
+		1EB1D7A4186714BF004332C6 /* driver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = driver.cpp; path = ../src/drivers/enseirBOT/driver.cpp; sourceTree = SOURCE_ROOT; };
+		1EFBDDAC186710B10078F625 /* enseirBOT.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = enseirBOT.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107320486CEB800E47090 /* Torcs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torcs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2016,6 +2054,17 @@
 				1362E81511AE7F6800AF3D9A /* libpng.framework in Frameworks */,
 				1362E81611AE7F6800AF3D9A /* zlib.framework in Frameworks */,
 				1362E81711AE7F6800AF3D9A /* plib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFBDDA4186710B10078F625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFBDDA5186710B10078F625 /* libTorcs.dylib in Frameworks */,
+				1EFBDDA6186710B10078F625 /* libpng.framework in Frameworks */,
+				1EFBDDA7186710B10078F625 /* zlib.framework in Frameworks */,
+				1EFBDDA8186710B10078F625 /* plib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2801,6 +2850,7 @@
 		1362E21111AE7D5B00AF3D9A /* drivers */ = {
 			isa = PBXGroup;
 			children = (
+				1EB1D7A2186714BF004332C6 /* enseirBOT */,
 				1362E21211AE7D5B00AF3D9A /* berniw */,
 				1362E27C11AE7D5B00AF3D9A /* berniw2 */,
 				1362E2B011AE7D5B00AF3D9A /* berniw3 */,
@@ -4393,8 +4443,18 @@
 				1362E7D111AE7ED600AF3D9A /* olethros.so */,
 				1362E80311AE7F4B00AF3D9A /* sparkle.so */,
 				1362E81B11AE7F6800AF3D9A /* tita.so */,
+				1EFBDDAC186710B10078F625 /* enseirBOT.so */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1EB1D7A2186714BF004332C6 /* enseirBOT */ = {
+			isa = PBXGroup;
+			children = (
+				1EB1D7A3186714BF004332C6 /* drive.ll */,
+				1EB1D7A4186714BF004332C6 /* driver.cpp */,
+			);
+			path = enseirBOT;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* Torcs */ = {
@@ -4719,6 +4779,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EFBDD9D186710B10078F625 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -5028,6 +5095,25 @@
 			productReference = 1362E81B11AE7F6800AF3D9A /* tita.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		1EFBDD9A186710B10078F625 /* enseirBOT.so */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFBDDA9186710B10078F625 /* Build configuration list for PBXNativeTarget "enseirBOT.so" */;
+			buildPhases = (
+				1EFBDD9D186710B10078F625 /* Headers */,
+				1EFBDD9E186710B10078F625 /* Sources */,
+				1EFBDDA4186710B10078F625 /* Frameworks */,
+			);
+			buildRules = (
+				1EB1D7A6186715CF004332C6 /* PBXBuildRule */,
+			);
+			dependencies = (
+				1EFBDD9B186710B10078F625 /* PBXTargetDependency */,
+			);
+			name = enseirBOT.so;
+			productName = human.so;
+			productReference = 1EFBDDAC186710B10078F625 /* enseirBOT.so */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		8D1107260486CEB800E47090 /* Torcs.app */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Torcs.app" */;
@@ -5060,9 +5146,15 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Torcs" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Torcs */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5087,6 +5179,7 @@
 				1362E7BF11AE7ED600AF3D9A /* olethros.so */,
 				1362E7EB11AE7F4B00AF3D9A /* sparkle.so */,
 				1362E80911AE7F6800AF3D9A /* tita.so */,
+				1EFBDD9A186710B10078F625 /* enseirBOT.so */,
 			);
 		};
 /* End PBXProject section */
@@ -5136,6 +5229,7 @@
 				"$(BUILT_PRODUCTS_DIR)/olethros.so",
 				"$(BUILT_PRODUCTS_DIR)/sparkle.so",
 				"$(BUILT_PRODUCTS_DIR)/tita.so",
+				"$(BUILT_PRODUCTS_DIR)/enseirBOT.so",
 			);
 			name = "Install drivers";
 			outputPaths = (
@@ -5155,7 +5249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "patch -p1 -d \"$TORCS_BASE\" < torcs-1.3.1-mac.diff";
+			shellScript = "patch -p1 -d \"$TORCS_BASE\" < torcs-1.3.1-mac.diff\ncp -R \"Resources/enseirBOT\" \"$TORCS_BASE/src/drivers\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -5472,6 +5566,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EFBDD9E186710B10078F625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E880BCC186734C300C05F95 /* driver.cpp in Sources */,
+				1EB1D7A5186715C4004332C6 /* drive.ll in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5658,6 +5761,16 @@
 			isa = PBXTargetDependency;
 			target = 0FE71DCF0DAC58EF008D6F50 /* All Dynamic Libraries */;
 			targetProxy = 13FFA45511B0881B00DFC073 /* PBXContainerItemProxy */;
+		};
+		1E2ABAAB186738C0004939E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFBDD9A186710B10078F625 /* enseirBOT.so */;
+			targetProxy = 1E2ABAAA186738C0004939E0 /* PBXContainerItemProxy */;
+		};
+		1EFBDD9B186710B10078F625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE722A90DAC7AD3008D6F50 /* libTorcs */;
+			targetProxy = 1EFBDD9C186710B10078F625 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -6487,7 +6600,6 @@
 		1362E81911AE7F6800AF3D9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
@@ -6541,6 +6653,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "Apply patch";
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -6551,6 +6664,56 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Apply patch";
+				SDKROOT = macosx10.8;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1EFBDDAA186710B10078F625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = "@executable_path/../Resources/drivers/$(PRODUCT_NAME)";
+				MACH_O_TYPE = mh_dylib;
+				PREBINDING = NO;
+				PRODUCT_NAME = enseirBOT;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1EFBDDAB186710B10078F625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "@executable_path/../Resources/drivers/$(PRODUCT_NAME)";
+				PREBINDING = NO;
+				PRODUCT_NAME = enseirBOT;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -6574,6 +6737,7 @@
 				INFOPLIST_FILE = Info.plist;
 				KEEP_PRIVATE_EXTERNS = NO;
 				PRODUCT_NAME = Torcs;
+				SDKROOT = macosx10.8;
 				STRIP_STYLE = debugging;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -6594,6 +6758,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Torcs;
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -6601,8 +6766,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"@executable_path/../Frameworks",
@@ -6621,7 +6785,7 @@
 				LIBRARY_SEARCH_PATHS = "@executable_path/../Resources";
 				PREBINDING = NO;
 				PRODUCT_NAME = Torcs;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.8;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = debugging;
 				TORCS_BASE = $SRCROOT/..;
@@ -6652,7 +6816,7 @@
 				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2 = "\"${TORCS_BASE}/src/modules/simu/simuv2/SOLID-2.0/include\"";
 				LIBRARY_SEARCH_PATHS = "@executable_path/../Resources";
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.8;
 				TORCS_BASE = $SRCROOT/..;
 			};
 			name = Release;
@@ -6827,6 +6991,15 @@
 			buildConfigurations = (
 				13FFB04511B0961000DFC073 /* Debug */,
 				13FFB04611B0961000DFC073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFBDDA9186710B10078F625 /* Build configuration list for PBXNativeTarget "enseirBOT.so" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFBDDAA186710B10078F625 /* Debug */,
+				1EFBDDAB186710B10078F625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
